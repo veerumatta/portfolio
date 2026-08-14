@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Veera Reddy | AWS DevOps Engineer</title>
+<meta name="description" content="Matta Veerareddy — AWS DevOps Engineer portfolio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050816;--panel:#0b1124;--panel2:#0f1730;--text:#eef4ff;--muted:#91a4c4;--cyan:#39ddff;--blue:#6366f1;--purple:#a855f7;--green:#48e6a0;--line:rgba(148,163,184,.16);--glow:rgba(57,221,255,.2)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(99,102,241,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.035) 1px,transparent 1px);background-size:45px 45px;mask-image:linear-gradient(to bottom,#000,transparent 90%);z-index:-2}
+body:after{content:"";position:fixed;width:550px;height:550px;right:-180px;top:-160px;border-radius:50%;background:rgba(99,102,241,.16);filter:blur(100px);z-index:-3}
+a{color:inherit}
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(1120px,92%);height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border:1px solid var(--line);border-radius:18px;background:rgba(7,12,29,.72);backdrop-filter:blur(22px);z-index:20;box-shadow:0 15px 60px rgba(0,0,0,.25)}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:1.05rem}.logo b{color:var(--cyan)}
+nav ul{display:flex;gap:26px;list-style:none}nav ul a{text-decoration:none;color:var(--muted);font-size:.82rem}nav ul a:hover{color:var(--cyan)}
+.navbtn{padding:9px 15px!important;border:1px solid rgba(57,221,255,.35);border-radius:10px;color:var(--cyan)!important;background:rgba(57,221,255,.06)}
+section{width:min(1120px,90%);margin:auto;padding:105px 0}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:145px}
+.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.kicker{font:500 .72rem "JetBrains Mono";color:var(--cyan);letter-spacing:.18em;margin-bottom:20px}
+h1{font:700 clamp(3.2rem,7vw,6.4rem)/.92 "Space Grotesk";letter-spacing:-.055em}
+h1 span{display:block;background:linear-gradient(90deg,var(--cyan),#7c83ff,var(--purple));-webkit-background-clip:text;color:transparent}
+.heroText{font-size:1.08rem;color:var(--muted);max-width:650px;margin:25px 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 19px;border-radius:11px;text-decoration:none;font-size:.86rem;font-weight:700;transition:.2s}
+.primary{background:linear-gradient(135deg,var(--blue),#7c3aed);box-shadow:0 10px 30px rgba(99,102,241,.25)}.primary:hover{transform:translateY(-2px)}
+.secondary{border:1px solid var(--line);background:rgba(255,255,255,.025);color:var(--muted)}.secondary:hover{border-color:var(--cyan);color:var(--cyan)}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:25px;color:var(--muted);font-size:.76rem}.dot{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 14px var(--green)}
+.codecard{background:linear-gradient(145deg,rgba(15,23,48,.95),rgba(5,8,22,.98));border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 25px 90px rgba(0,0,0,.45),0 0 60px rgba(99,102,241,.08)}
+.topbar{height:42px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 15px}.circle{width:9px;height:9px;border-radius:50%;background:#475569}.filename{margin-left:auto;color:#7184a5;font:11px "JetBrains Mono"}
+.code{padding:24px;font:12px/2 "JetBrains Mono";color:#9fb1ce}.key{color:#a78bfa}.val{color:#6ee7b7}.str{color:#67e8f9}.comment{color:#52627d}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}.stat{padding:17px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:14px}.stat strong{font:700 1.45rem "Space Grotesk";display:block}.stat small{color:var(--muted);font-size:.7rem}
+.darkSection{width:100%;background:linear-gradient(180deg,transparent,rgba(15,23,48,.55),transparent)}
+.sectionK{font:500 .7rem "JetBrains Mono";color:var(--cyan);letter-spacing:.18em;margin-bottom:10px}.title{font:700 clamp(2rem,4vw,3rem) "Space Grotesk";letter-spacing:-.04em}.sub{color:var(--muted);max-width:680px;margin:10px 0 38px}
+.skillGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:21px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));transition:.25s}.skill:hover{transform:translateY(-5px);border-color:rgba(57,221,255,.35);box-shadow:0 18px 45px rgba(0,0,0,.25)}.icon{font-size:1.35rem;margin-bottom:12px}.skill h3{font-size:.92rem}.skill p{font-size:.76rem;color:var(--muted);margin:5px 0 12px}.tags{display:flex;flex-wrap:wrap;gap:5px}.tag{font:10px "JetBrains Mono";color:#9db0ce;border:1px solid var(--line);background:rgba(255,255,255,.035);padding:4px 7px;border-radius:6px}
+.projectGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{position:relative;padding:28px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(15,23,48,.85),rgba(7,12,29,.85));overflow:hidden}.project:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--purple))}.badge{font:10px "JetBrains Mono";color:var(--cyan);letter-spacing:.08em}.project h3{font:700 1.35rem "Space Grotesk";margin:10px 0}.project>p{color:var(--muted);font-size:.84rem}.project ul{padding-left:18px;margin:17px 0}.project li{color:#a7b6ce;font-size:.79rem;margin:7px 0}.project li::marker{color:var(--cyan)}
+.achievement{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;padding:30px;border:1px solid rgba(168,85,247,.25);background:radial-gradient(circle at 10% 20%,rgba(168,85,247,.15),transparent 45%),rgba(255,255,255,.025);border-radius:22px}.trophy{font-size:3rem}.achievement h3{font:700 1.35rem "Space Grotesk"}.achievement p,.achievement li{color:var(--muted);font-size:.82rem}.achievement ul{padding-left:18px;margin-top:10px}
+.contact{text-align:center;padding:120px 20px}.contactBox{border:1px solid var(--line);border-radius:25px;padding:55px 25px;background:radial-gradient(circle at 50% 0,rgba(57,221,255,.1),transparent 45%),rgba(15,23,48,.55)}.contactBox h2{font:700 clamp(2rem,5vw,3.6rem) "Space Grotesk";letter-spacing:-.04em}.contactBox p{color:var(--muted);margin:12px auto 25px}.contactInfo{margin-top:22px;color:#8195b7;font-size:.78rem}.contactInfo a{text-decoration:none;color:var(--cyan)}
+footer{border-top:1px solid var(--line);padding:25px 5%;display:flex;justify-content:space-between;color:#60728f;font-size:.72rem}
+@media(max-width:900px){nav ul{display:none}.heroGrid,.projectGrid{grid-template-columns:1fr}.codecard{display:none}.skillGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){section{width:90%;padding:80px 0}.skillGrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.achievement{grid-template-columns:1fr;text-align:center}.achievement ul{text-align:left}footer{display:block;text-align:center}h1{font-size:3.3rem}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">VEERA<b>.</b>DEVOPS</div>
+<ul><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#github">GitHub</a></li><li><a href="#achievement">Achievement</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="navbtn" href="mailto:Mattaveerareddy1607@gmail.com">Hire Me</a>
+</nav>
+
+<section class="hero">
+<div class="heroGrid">
+<div>
+<div class="kicker">AWS · DEVOPS · CLOUD · AUTOMATION</div>
+<h1>MATTA<br><span>VEERAREDDY</span></h1>
+<p class="heroText">Computer Science graduate focused on AWS, DevOps and cloud automation. I build practical solutions with Terraform, GitHub Actions, Docker, Kubernetes, Argo CD and DevSecOps tooling.</p>
+<div class="buttons"><a class="btn primary" href="#projects">Explore My Work →</a><a class="btn secondary" href="mailto:Mattaveerareddy1607@gmail.com">Let's Connect</a><a class="btn secondary" href="https://github.com/veerumatta" target="_blank">GitHub ↗</a></div>
+<div class="status"><i class="dot"></i> Open to entry-level AWS / DevOps opportunities</div>
+<div class="stats"><div class="stat"><strong>AWS</strong><small>Cloud Platform</small></div><div class="stat"><strong>IaC</strong><small>Terraform</small></div><div class="stat"><strong>CI/CD</strong><small>GitHub Actions</small></div></div>
+</div>
+<div class="codecard">
+<div class="topbar"><i class="circle"></i><i class="circle"></i><i class="circle"></i><span class="filename">veera-devops.yaml</span></div>
+<div class="code">
+<span class="key">name:</span> <span class="str">"Matta Veerareddy"</span><br>
+<span class="key">role:</span> <span class="str">"AWS DevOps Engineer"</span><br>
+<span class="key">status:</span> <span class="val">"available"</span><br><br>
+<span class="key">stack:</span><br>
+&nbsp;&nbsp;- <span class="str">AWS</span><br>
+&nbsp;&nbsp;- <span class="str">Terraform</span><br>
+&nbsp;&nbsp;- <span class="str">Docker</span><br>
+&nbsp;&nbsp;- <span class="str">Kubernetes</span><br>
+&nbsp;&nbsp;- <span class="str">GitHub Actions</span><br>
+&nbsp;&nbsp;- <span class="str">Argo CD</span><br>
+&nbsp;&nbsp;- <span class="str">SonarQube + Snyk</span><br>
+&nbsp;&nbsp;- <span class="str">Nexus</span><br>
+&nbsp;&nbsp;- <span class="str">Linux</span><br><br>
+<span class="comment"># ready to build & deploy 🚀</span>
+</div>
+</div>
+</div>
+</section>
+
+<div class="darkSection"><section id="skills">
+<div class="sectionK">// TECHNICAL ARSENAL</div>
+<h2 class="title">My DevOps Skill Stack</h2>
+<p class="sub">A focused, job-ready stack for cloud infrastructure, CI/CD, GitOps, containers, security and Linux automation.</p>
+
+<div class="skillGrid">
+<div class="skill"><div class="icon">☁️</div><h3>AWS Cloud</h3><p>Cloud infrastructure & deployment</p><div class="tags"><span class="tag">AWS</span><span class="tag">EC2</span><span class="tag">VPC</span></div></div>
+
+<div class="skill"><div class="icon">🔧</div><h3>Git & GitHub</h3><p>Version control & collaboration</p><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Branching</span></div></div>
+
+<div class="skill"><div class="icon">⚙️</div><h3>GitHub Actions</h3><p>CI/CD workflow automation</p><div class="tags"><span class="tag">CI</span><span class="tag">CD</span><span class="tag">Workflows</span></div></div>
+
+<div class="skill"><div class="icon">🏗️</div><h3>Terraform</h3><p>Infrastructure as Code</p><div class="tags"><span class="tag">IaC</span><span class="tag">AWS</span><span class="tag">Modules</span></div></div>
+
+<div class="skill"><div class="icon">🐳</div><h3>Docker</h3><p>Containerization & images</p><div class="tags"><span class="tag">Dockerfile</span><span class="tag">Compose</span><span class="tag">Volumes</span></div></div>
+
+<div class="skill"><div class="icon">☸️</div><h3>Kubernetes</h3><p>Container orchestration</p><div class="tags"><span class="tag">K8s</span><span class="tag">Pods</span><span class="tag">Deployments</span></div></div>
+
+<div class="skill"><div class="icon">🚀</div><h3>Argo CD</h3><p>GitOps continuous delivery</p><div class="tags"><span class="tag">GitOps</span><span class="tag">CD</span><span class="tag">Kubernetes</span></div></div>
+
+<div class="skill"><div class="icon">🐧</div><h3>Linux</h3><p>Server administration & automation</p><div class="tags"><span class="tag">Ubuntu</span><span class="tag">CLI</span><span class="tag">Shell</span></div></div>
+
+<div class="skill"><div class="icon">🔍</div><h3>SonarQube</h3><p>Code quality analysis</p><div class="tags"><span class="tag">Quality Gate</span><span class="tag">Analysis</span></div></div>
+
+<div class="skill"><div class="icon">🛡️</div><h3>Snyk</h3><p>Dependency & security scanning</p><div class="tags"><span class="tag">Security</span><span class="tag">SCA</span></div></div>
+
+<div class="skill"><div class="icon">📦</div><h3>Nexus</h3><p>Artifact repository management</p><div class="tags"><span class="tag">Artifacts</span><span class="tag">Repositories</span></div></div>
+
+<div class="skill"><div class="icon">🔄</div><h3>DevOps Workflow</h3><p>Build → Secure → Deploy → Monitor</p><div class="tags"><span class="tag">CI/CD</span><span class="tag">GitOps</span><span class="tag">Automation</span></div></div>
+</div>
+
+<div style="margin-top:24px;padding:20px 22px;border:1px solid rgba(57,221,255,.16);border-radius:16px;background:rgba(57,221,255,.035)">
+<div class="sectionK" style="margin-bottom:8px">CORE FOCUS</div>
+<p style="color:#a7b6ce;font-size:.82rem">AWS Cloud · Infrastructure as Code · CI/CD · GitOps · Docker · Kubernetes · Linux · DevSecOps</p>
+</div>
+</section></div>
+
+<div class="darkSection"><section>
+<div class="sectionK">// HOW I CONNECT THE TOOLS</div>
+<h2 class="title">DevOps Delivery Flow</h2>
+<p class="sub">A practical workflow connecting source control, automation, infrastructure, security and Kubernetes delivery.</p>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap">
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>GitHub</strong><br><small style="color:#91a4c4">Source</small></div>
+<span style="color:#39ddff;font-size:1.4rem">→</span>
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>Actions</strong><br><small style="color:#91a4c4">CI/CD</small></div>
+<span style="color:#39ddff;font-size:1.4rem">→</span>
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>SonarQube</strong><br><small style="color:#91a4c4">Quality</small></div>
+<span style="color:#39ddff;font-size:1.4rem">→</span>
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>Snyk</strong><br><small style="color:#91a4c4">Security</small></div>
+<span style="color:#39ddff;font-size:1.4rem">→</span>
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>Docker</strong><br><small style="color:#91a4c4">Container</small></div>
+<span style="color:#39ddff;font-size:1.4rem">→</span>
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>Kubernetes</strong><br><small style="color:#91a4c4">Runtime</small></div>
+<span style="color:#39ddff;font-size:1.4rem">→</span>
+<div class="skill" style="padding:14px 18px;text-align:center"><strong>Argo CD</strong><br><small style="color:#91a4c4">GitOps</small></div>
+</div>
+</section></div>
+<section id="projects">
+<div class="sectionK">// FEATURED WORK</div><h2 class="title">Projects That Show My Skills</h2><p class="sub">Hands-on implementations focused on infrastructure automation, cloud deployment and CI/CD.</p>
+<div class="projectGrid">
+<div class="project"><div class="badge">PROJECT 01 · CLOUD INFRASTRUCTURE</div><h3>Terraform MariaDB Deployment on AWS</h3><p>Automated Development and Staging MariaDB deployment on AWS using Terraform.</p><ul><li>Provisioned VPC, subnet, security groups and EC2 with Terraform.</li><li>Automated server configuration using Terraform user_data.</li><li>Deployed separate MariaDB containers for Dev and Staging using Docker.</li><li>Configured persistent storage using Docker volumes.</li><li>Implemented SQL schema, RBAC, users and permissions.</li><li>Verified database connectivity and CRUD operations.</li></ul><div class="tags"><span class="tag">AWS EC2</span><span class="tag">Terraform</span><span class="tag">Docker Compose</span><span class="tag">MariaDB</span><span class="tag">SQL</span><span class="tag">Shell</span></div><div style="margin-top:20px"><a class="btn secondary" href="https://github.com/veerumatta/Terraform-MariaDB-Deployment" target="_blank">View Project on GitHub ↗</a></div></div>
+<div class="project"><div class="badge">PROJECT 02 · DEVOPS PIPELINE</div><h3>CI/CD Pipeline for Java Web Application</h3><p>Automated build, test, quality analysis, security scanning and deployment using GitHub Actions.</p><ul><li>Built CI/CD automation using GitHub Actions.</li><li>Integrated SonarQube for code quality analysis.</li><li>Integrated Snyk for dependency and security vulnerability scanning.</li><li>Used Nexus Repository for artifact management.</li><li>Deployed the Java web application using Apache Tomcat.</li><li>Used Maven for application builds and GitHub for version control.</li></ul><div class="tags"><span class="tag">GitHub Actions</span><span class="tag">Maven</span><span class="tag">SonarQube</span><span class="tag">Snyk</span><span class="tag">Nexus</span><span class="tag">Tomcat</span></div><div style="margin-top:20px"><a class="btn secondary" href="https://github.com/veerumatta" target="_blank">View Pipeline Projects ↗</a></div></div>
+</div>
+</section>
+
+
+<div class="darkSection"><section id="github">
+<div class="sectionK">// OPEN SOURCE & PROJECT REPOSITORIES</div>
+<h2 class="title">Explore My GitHub</h2>
+<p class="sub">Browse my repositories, infrastructure projects, CI/CD work, Kubernetes practice and cloud engineering experiments.</p>
+<div class="projectGrid">
+<div class="project">
+<div class="badge">GITHUB · PORTFOLIO</div>
+<h3>veerumatta</h3>
+<p>My GitHub profile containing AWS, DevOps, Terraform, Kubernetes, CI/CD and cloud engineering repositories.</p>
+<div class="tags"><span class="tag">AWS</span><span class="tag">DevOps</span><span class="tag">Terraform</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span></div>
+<div style="margin-top:20px"><a class="btn primary" href="https://github.com/veerumatta" target="_blank">Open GitHub Profile ↗</a></div>
+</div>
+<div class="project">
+<div class="badge">FEATURED REPOSITORIES</div>
+<h3>More DevOps Work</h3>
+<p>Explore additional repositories including AWS architecture, Terraform, Kubernetes and CI/CD projects available on my GitHub profile.</p>
+<div class="tags"><span class="tag">AWS Architecture</span><span class="tag">Terraform</span><span class="tag">Kubernetes</span><span class="tag">React CI/CD</span></div>
+<div style="margin-top:20px"><a class="btn secondary" href="https://github.com/veerumatta?tab=repositories" target="_blank">View All Repositories ↗</a></div>
+</div>
+</div>
+</section></div>
+<div class="darkSection"><section id="achievement">
+<div class="sectionK">// RECOGNITION</div><h2 class="title">Achievement</h2><p class="sub">A competitive project experience demonstrating practical DevSecOps implementation.</p>
+<div class="achievement"><div class="trophy">🏆</div><div><h3>1st Prize — CloudShield DevSecOps Hackathon 2026</h3><p>Organized by V Cube Software Solutions.</p><ul><li>Led a team of 3 members to design and implement an end-to-end DevSecOps pipeline.</li><li>Covered Build, Secure, Deploy and Monitor stages.</li><li>Provisioned AWS infrastructure using Terraform with EC2, EKS and ECR.</li><li>Implemented GitHub Actions CI/CD and integrated SonarQube and Trivy.</li><li>Deployed containerized applications on Kubernetes (EKS).</li><li>Set up Prometheus and Grafana for monitoring and observability.</li></ul></div></div>
+</section></div>
+
+<section id="contact" class="contact">
+<div class="contactBox">
+<div class="sectionK">// LET'S BUILD SOMETHING</div>
+<h2>Ready for the next opportunity.</h2>
+<p>I'm looking for an entry-level AWS, Cloud or DevOps engineering role where I can contribute, learn and grow.</p>
+<div class="buttons" style="justify-content:center"><a class="btn primary" href="mailto:Mattaveerareddy1607@gmail.com">📧 Email Me</a><a class="btn secondary" href="https://www.linkedin.com/in/veera-reddy-matta-9a92072a4/" target="_blank">in LinkedIn</a><a class="btn secondary" href="https://github.com/veerumatta" target="_blank">GitHub ↗</a></div>
+<div class="contactInfo">Mattaveerareddy1607@gmail.com · +91 9666434963 · Hyderabad</div>
+</div>
+</section>
+
+<footer><span>MATTA VEERAREDDY · AWS DEVOPS ENGINEER</span><span><a href="https://github.com/veerumatta" target="_blank" style="text-decoration:none;color:#39ddff">GitHub</a> · <a href="https://www.linkedin.com/in/veera-reddy-matta-9a92072a4/" target="_blank" style="text-decoration:none;color:#39ddff">LinkedIn</a> · © 2026</span></footer>
+</body></html>
